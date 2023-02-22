@@ -23,7 +23,7 @@ public class TestPage extends ElementUtil {
 
     //page actions
     public void navigateToCart(){
-        sleepWait(10000);
+        //sleepWait(10000);
         click(homePageCartIcon);
     }
 
