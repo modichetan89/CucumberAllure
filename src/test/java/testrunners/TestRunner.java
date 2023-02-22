@@ -15,7 +15,8 @@ import org.junit.runner.RunWith;
         },
         tags = "not @Skip",
         monochrome = true,
-        dryRun = false
+        dryRun = false,
+        format = {"json:target/cucumber.json"}
 
 )
 /**
