@@ -11,8 +11,10 @@ import org.junit.runner.RunWith;
         glue = {"stepDefinitions", "apphooks"},
         plugin = {"pretty",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-                "rerun:target/failedrerun.txt",
-                 "json:target/cucumber.json" 
+                "html:target/cucumber-results/cucumber-html-reports",
+                "json:target/cucumber-results/cucumber.json",
+                "junit:target/cucumber-results/cucumber.xml",
+                "rerun:target/failedrerun.txt"
         },
         tags = "not @Skip",
         monochrome = true,
